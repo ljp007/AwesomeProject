@@ -78,7 +78,8 @@ To learn more about React Native, take a look at the following resources:
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
 
-中文说明：
+#中文说明:
+
 第一个接触Reacnative 的人，可以从简单的Demo 入手，主要有以下步骤：
 1.安装Reactnative的运行环境
 2.npx react-native init RNDemos（demo 工程名字）
