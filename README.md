@@ -88,5 +88,5 @@ To learn more about React Native, take a look at the following resources:
 5.Xcode 运行 demo；
 6.如果要把ReactNative集成进自己工程，先把自带的iOS工程删掉，然后在原iOS 文件下创建自己的iOS 工程；
 7.在 iOS 目录下 执行 pod init,然后配置自己的profile 文件内容；
-8.执行pod init;
+8.执行pod install;
 9.重新执行nmp start,运行自己的iOS 工程。
