@@ -77,3 +77,15 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+中文说明：
+第一个接触Reacnative 的人，可以从简单的Demo 入手，主要有以下步骤：
+1.安装Reactnative的运行环境
+2.npx react-native init RNDemos（demo 工程名字）
+3.在demo的根目录下，终端执行 yarn install 命令安装React Native需要的依赖包
+4.执行npm start
+5.Xcode 运行 demo；
+6.要把ReactNative 自带的iOS工程删掉，让后在原iOS 文件下创建自己的iOS 工程；
+7.在 iOS 目录下 执行 pod init,然后配置自己的profile 文件内容；
+8.执行pod init;
+9.重新执行nmp start,运行自己的iOS 工程。
