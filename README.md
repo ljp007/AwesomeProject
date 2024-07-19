@@ -86,7 +86,7 @@ To learn more about React Native, take a look at the following resources:
 3.在demo的根目录下，终端执行 yarn install 命令安装React Native需要的依赖包
 4.执行npm start
 5.Xcode 运行 demo；
-6.要把ReactNative 自带的iOS工程删掉，让后在原iOS 文件下创建自己的iOS 工程；
+6.如果要把ReactNative集成进自己工程，先把自带的iOS工程删掉，然后在原iOS 文件下创建自己的iOS 工程；
 7.在 iOS 目录下 执行 pod init,然后配置自己的profile 文件内容；
 8.执行pod init;
 9.重新执行nmp start,运行自己的iOS 工程。
