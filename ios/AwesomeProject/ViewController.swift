@@ -18,14 +18,6 @@ class ViewController: UIViewController,RCTBridgeDelegate {
 
     @IBAction func showRnViewAction(_ sender: Any) {
         print("Hello")
-//        guard let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios") else { return }
-//         let mockData:NSDictionary = ["scores":
-//             [
-//                 ["name":"Alex", "value":"42"],
-//                 ["name":"Joel", "value":"10"]
-//             ]
-//         ]
-
         guard let bridge = RCTBridge(delegate: self, launchOptions: nil) else { return }
         let rootView = RCTRootView(bridge:bridge, moduleName: "AwesomeProject", initialProperties: nil)
 
@@ -33,7 +25,6 @@ class ViewController: UIViewController,RCTBridgeDelegate {
         let vc = UIViewController()
         vc.view = rootView
         self.present(vc, animated: true, completion: nil)
-        
         
     }
     
