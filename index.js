@@ -1,5 +1,7 @@
 import React from 'react';
 import {AppRegistry, StyleSheet, Text, View} from 'react-native';
+import UserList from './src/components/UserList';
+import { name as appName } from './app.json';
 
 class RNHighScores extends React.Component {
   render() {
@@ -41,3 +43,6 @@ const styles = StyleSheet.create({
 
 // 整体js模块的名称
 AppRegistry.registerComponent('RNHighScores', () => RNHighScores);
+AppRegistry.registerComponent('AwesomeProject', () => UserList);
+
+
