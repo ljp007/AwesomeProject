@@ -82,7 +82,7 @@ To learn more about React Native, take a look at the following resources:
 
 第一个接触Reacnative 的人，可以从简单的Demo 入手，主要有以下步骤：
 1.安装Reactnative的运行环境
-2.npx react-native init RNDemos（demo 工程名字）
+2.npx react-native@latest init AwesomeProject（demo 工程名字）
 3.在demo的根目录下，终端执行 yarn install 命令安装React Native需要的依赖包
 4.执行npm start
 5.Xcode 运行 demo；
