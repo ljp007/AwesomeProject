@@ -1,60 +1,55 @@
-// src/components/UserList.tsx
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, StyleSheet } from 'react-native';
-import { fetchUsers, User } from '../services/userService';
+import { FlatList, Text,TouchableOpacity, View, StyleSheet } from 'react-native';
+import axios from 'axios';
+//import { NavigationStackProp } from '@react-navigation/stack';
+import { useNavigation } from '@react-navigation/native';
+
+
+type User = {
+  id: number;
+  name: string;
+};
+
+//type UserListProps = {
+//  navigation: NavigationStackProp<any>;
+//};
 
 const UserList: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-
+  const navigation = useNavigation();
+ 
   useEffect(() => {
-    const getUsers = async () => {
-      try {
-        const users = await fetchUsers();
-        setUsers(users);
-      } catch (error) {
-        setError(error.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    getUsers();
+    axios.get('https://jsonplaceholder.typicode.com/users')
+      .then(response => {
+        setUsers(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
   }, []);
 
-  if (loading) {
-    return <Text>Loading...</Text>;
-  }
-
-  if (error) {
-    return <Text>Error: {error}</Text>;
-  }
+  const renderItem = ({ item }: { item: User }) => (
+    <TouchableOpacity onPress={() => navigation.navigate('UserDetails', { userId: item.id })}>
+      <View style={styles.item}>
+        <Text>{item.name}</Text>
+      </View>
+    </TouchableOpacity>
+  );
 
   return (
     <FlatList
       data={users}
-      keyExtractor={(item) => item.id.toString()}
-      renderItem={({ item }) => (
-        <View style={styles.userContainer}>
-          <Text style={styles.userName}>{item.name}</Text>
-          <Text>{item.email}</Text>
-          <Text>{item.phone}</Text>
-        </View>
-      )}
+      renderItem={renderItem}
+      keyExtractor={item => item.id.toString()}
     />
   );
 };
 
 const styles = StyleSheet.create({
-  userContainer: {
-    padding: 16,
+  item: {
+    padding: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
-  },
-  userName: {
-    fontSize: 18,
-    fontWeight: 'bold',
   },
 });
 

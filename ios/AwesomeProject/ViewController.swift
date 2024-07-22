@@ -24,7 +24,9 @@ class ViewController: UIViewController,RCTBridgeDelegate {
         rootView.backgroundColor = UIColor.white
         let vc = UIViewController()
         vc.view = rootView
-        self.present(vc, animated: true, completion: nil)
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .overFullScreen
+        self.present(nav, animated: true, completion: nil)
         
     }
     
