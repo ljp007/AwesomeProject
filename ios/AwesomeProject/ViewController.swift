@@ -26,6 +26,7 @@ class ViewController: UIViewController,RCTBridgeDelegate {
         vc.view = rootView
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .overFullScreen
+        nav.navigationBar.isHidden = true
         self.present(nav, animated: true, completion: nil)
         
     }
