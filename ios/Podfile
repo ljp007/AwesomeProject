@@ -25,6 +25,7 @@ target 'AwesomeProject' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+  
 
   target 'AwesomeProjectTests' do
     inherit! :complete

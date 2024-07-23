@@ -16,6 +16,8 @@
 		3E3A60E32C4970F300594051 /* AwesomeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60E22C4970F300594051 /* AwesomeProjectTests.swift */; };
 		3E3A60ED2C4970F300594051 /* AwesomeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60EC2C4970F300594051 /* AwesomeProjectUITests.swift */; };
 		3E3A60EF2C4970F300594051 /* AwesomeProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60EE2C4970F300594051 /* AwesomeProjectUITestsLaunchTests.swift */; };
+		3E3A60FD2C4EA51700594051 /* EventEmitterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60FC2C4EA51700594051 /* EventEmitterModule.swift */; };
+		3E3A61002C4EAEF100594051 /* EventEmitterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60FF2C4EAEF100594051 /* EventEmitterModule.m */; };
 		4F48EC34CFC486B3F1F98BBA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 853D8923EF2A813F072AB150 /* PrivacyInfo.xcprivacy */; };
 		9C5BB0DDC50C0ECDD68A2540 /* libPods-AwesomeProject-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD626818555CFE9DF91EC6C6 /* libPods-AwesomeProject-AwesomeProjectTests.a */; };
 		AFE6A438782E79ECA07FE8FF /* libPods-AwesomeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111EF1DC1AF253464429D44A /* libPods-AwesomeProject.a */; };
@@ -53,6 +55,9 @@
 		3E3A60E82C4970F300594051 /* AwesomeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3A60EC2C4970F300594051 /* AwesomeProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeProjectUITests.swift; sourceTree = "<group>"; };
 		3E3A60EE2C4970F300594051 /* AwesomeProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E3A60FC2C4EA51700594051 /* EventEmitterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEmitterModule.swift; sourceTree = "<group>"; };
+		3E3A60FE2C4EAEF000594051 /* AwesomeProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AwesomeProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E3A60FF2C4EAEF100594051 /* EventEmitterModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventEmitterModule.m; sourceTree = "<group>"; };
 		853D8923EF2A813F072AB150 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ../PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		97F6122239E26C1E5436B3E9 /* Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A23157E7F1C2F9DAD38A39B5 /* Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +127,7 @@
 		3E3A60CA2C4970F100594051 /* AwesomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A60FB2C4EA4F800594051 /* Module */,
 				3E3A60CB2C4970F100594051 /* AppDelegate.swift */,
 				3E3A60CD2C4970F100594051 /* SceneDelegate.swift */,
 				3E3A60CF2C4970F100594051 /* ViewController.swift */,
@@ -149,6 +155,16 @@
 				3E3A60EE2C4970F300594051 /* AwesomeProjectUITestsLaunchTests.swift */,
 			);
 			path = AwesomeProjectUITests;
+			sourceTree = "<group>";
+		};
+		3E3A60FB2C4EA4F800594051 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A60FC2C4EA51700594051 /* EventEmitterModule.swift */,
+				3E3A60FF2C4EAEF100594051 /* EventEmitterModule.m */,
+				3E3A60FE2C4EAEF000594051 /* AwesomeProject-Bridging-Header.h */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		C7DA051AFA24B8AA2C088B77 /* Pods */ = {
@@ -236,6 +252,7 @@
 				TargetAttributes = {
 					3E3A60C72C4970F100594051 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					3E3A60DD2C4970F300594051 = {
 						CreatedOnToolsVersion = 15.4;
@@ -416,7 +433,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3A60D02C4970F100594051 /* ViewController.swift in Sources */,
+				3E3A60FD2C4EA51700594051 /* EventEmitterModule.swift in Sources */,
 				3E3A60CC2C4970F100594051 /* AppDelegate.swift in Sources */,
+				3E3A61002C4EAEF100594051 /* EventEmitterModule.m in Sources */,
 				3E3A60CE2C4970F100594051 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +637,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -636,6 +656,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jacken.AwesomeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProject/Module/AwesomeProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -647,6 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -665,6 +688,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jacken.AwesomeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProject/Module/AwesomeProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
