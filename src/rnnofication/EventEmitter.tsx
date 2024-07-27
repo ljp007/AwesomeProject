@@ -7,6 +7,7 @@ if (!EventEmitterModule) {
   throw new Error('EventEmitterModule is not linked correctly. Please ensure that the native module is properly registered.');
 }
 
+
 const eventEmitter = new NativeEventEmitter(EventEmitterModule);
 
 export default eventEmitter;
