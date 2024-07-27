@@ -16,8 +16,18 @@
 		3E3A60E32C4970F300594051 /* AwesomeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60E22C4970F300594051 /* AwesomeProjectTests.swift */; };
 		3E3A60ED2C4970F300594051 /* AwesomeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60EC2C4970F300594051 /* AwesomeProjectUITests.swift */; };
 		3E3A60EF2C4970F300594051 /* AwesomeProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60EE2C4970F300594051 /* AwesomeProjectUITestsLaunchTests.swift */; };
-		3E3A60FD2C4EA51700594051 /* EventEmitterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60FC2C4EA51700594051 /* EventEmitterModule.swift */; };
-		3E3A61002C4EAEF100594051 /* EventEmitterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A60FF2C4EAEF100594051 /* EventEmitterModule.m */; };
+		3E3A61022C54E4E400594051 /* AwesomeProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61012C54E4E400594051 /* AwesomeProject.swift */; };
+		3E3A61032C54E4E400594051 /* AwesomeProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61012C54E4E400594051 /* AwesomeProject.swift */; };
+		3E3A61042C54E4E400594051 /* AwesomeProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61012C54E4E400594051 /* AwesomeProject.swift */; };
+		3E3A61072C54E54700594051 /* AWRNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61062C54E54700594051 /* AWRNManager.swift */; };
+		3E3A61082C54E54700594051 /* AWRNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61062C54E54700594051 /* AWRNManager.swift */; };
+		3E3A61092C54E54700594051 /* AWRNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61062C54E54700594051 /* AWRNManager.swift */; };
+		3E3A610E2C54E93800594051 /* AWUIEeventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A610D2C54E93800594051 /* AWUIEeventManager.m */; };
+		3E3A610F2C54E93800594051 /* AWUIEeventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A610D2C54E93800594051 /* AWUIEeventManager.m */; };
+		3E3A61102C54E93800594051 /* AWUIEeventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A610D2C54E93800594051 /* AWUIEeventManager.m */; };
+		3E3A61132C54F4EC00594051 /* EventEmitterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61122C54F4EC00594051 /* EventEmitterModule.m */; };
+		3E3A61142C54F4EC00594051 /* EventEmitterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61122C54F4EC00594051 /* EventEmitterModule.m */; };
+		3E3A61152C54F4EC00594051 /* EventEmitterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61122C54F4EC00594051 /* EventEmitterModule.m */; };
 		4F48EC34CFC486B3F1F98BBA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 853D8923EF2A813F072AB150 /* PrivacyInfo.xcprivacy */; };
 		9C5BB0DDC50C0ECDD68A2540 /* libPods-AwesomeProject-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD626818555CFE9DF91EC6C6 /* libPods-AwesomeProject-AwesomeProjectTests.a */; };
 		AFE6A438782E79ECA07FE8FF /* libPods-AwesomeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111EF1DC1AF253464429D44A /* libPods-AwesomeProject.a */; };
@@ -55,9 +65,15 @@
 		3E3A60E82C4970F300594051 /* AwesomeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3A60EC2C4970F300594051 /* AwesomeProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeProjectUITests.swift; sourceTree = "<group>"; };
 		3E3A60EE2C4970F300594051 /* AwesomeProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3E3A60FC2C4EA51700594051 /* EventEmitterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEmitterModule.swift; sourceTree = "<group>"; };
 		3E3A60FE2C4EAEF000594051 /* AwesomeProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AwesomeProject-Bridging-Header.h"; sourceTree = "<group>"; };
-		3E3A60FF2C4EAEF100594051 /* EventEmitterModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventEmitterModule.m; sourceTree = "<group>"; };
+		3E3A61012C54E4E400594051 /* AwesomeProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeProject.swift; sourceTree = "<group>"; };
+		3E3A61062C54E54700594051 /* AWRNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWRNManager.swift; sourceTree = "<group>"; };
+		3E3A610A2C54E93800594051 /* AwesomeProjectTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AwesomeProjectTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E3A610B2C54E93800594051 /* AwesomeProjectUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AwesomeProjectUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E3A610C2C54E93800594051 /* AWUIEeventManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWUIEeventManager.h; sourceTree = "<group>"; };
+		3E3A610D2C54E93800594051 /* AWUIEeventManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWUIEeventManager.m; sourceTree = "<group>"; };
+		3E3A61112C54F4EC00594051 /* EventEmitterModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventEmitterModule.h; sourceTree = "<group>"; };
+		3E3A61122C54F4EC00594051 /* EventEmitterModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventEmitterModule.m; sourceTree = "<group>"; };
 		853D8923EF2A813F072AB150 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ../PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		97F6122239E26C1E5436B3E9 /* Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A23157E7F1C2F9DAD38A39B5 /* Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +143,7 @@
 		3E3A60CA2C4970F100594051 /* AwesomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A61052C54E51C00594051 /* Manager */,
 				3E3A60FB2C4EA4F800594051 /* Module */,
 				3E3A60CB2C4970F100594051 /* AppDelegate.swift */,
 				3E3A60CD2C4970F100594051 /* SceneDelegate.swift */,
@@ -160,11 +177,24 @@
 		3E3A60FB2C4EA4F800594051 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				3E3A60FC2C4EA51700594051 /* EventEmitterModule.swift */,
-				3E3A60FF2C4EAEF100594051 /* EventEmitterModule.m */,
 				3E3A60FE2C4EAEF000594051 /* AwesomeProject-Bridging-Header.h */,
+				3E3A61012C54E4E400594051 /* AwesomeProject.swift */,
+				3E3A61112C54F4EC00594051 /* EventEmitterModule.h */,
+				3E3A61122C54F4EC00594051 /* EventEmitterModule.m */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		3E3A61052C54E51C00594051 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3E3A61062C54E54700594051 /* AWRNManager.swift */,
+				3E3A610C2C54E93800594051 /* AWUIEeventManager.h */,
+				3E3A610D2C54E93800594051 /* AWUIEeventManager.m */,
+				3E3A610A2C54E93800594051 /* AwesomeProjectTests-Bridging-Header.h */,
+				3E3A610B2C54E93800594051 /* AwesomeProjectUITests-Bridging-Header.h */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		C7DA051AFA24B8AA2C088B77 /* Pods */ = {
@@ -256,10 +286,12 @@
 					};
 					3E3A60DD2C4970F300594051 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 3E3A60C72C4970F100594051;
 					};
 					3E3A60E72C4970F300594051 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 3E3A60C72C4970F100594051;
 					};
 				};
@@ -433,10 +465,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3A60D02C4970F100594051 /* ViewController.swift in Sources */,
-				3E3A60FD2C4EA51700594051 /* EventEmitterModule.swift in Sources */,
 				3E3A60CC2C4970F100594051 /* AppDelegate.swift in Sources */,
-				3E3A61002C4EAEF100594051 /* EventEmitterModule.m in Sources */,
+				3E3A61072C54E54700594051 /* AWRNManager.swift in Sources */,
+				3E3A61022C54E4E400594051 /* AwesomeProject.swift in Sources */,
+				3E3A610E2C54E93800594051 /* AWUIEeventManager.m in Sources */,
 				3E3A60CE2C4970F100594051 /* SceneDelegate.swift in Sources */,
+				3E3A61132C54F4EC00594051 /* EventEmitterModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +479,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3A60E32C4970F300594051 /* AwesomeProjectTests.swift in Sources */,
+				3E3A61082C54E54700594051 /* AWRNManager.swift in Sources */,
+				3E3A610F2C54E93800594051 /* AWUIEeventManager.m in Sources */,
+				3E3A61142C54F4EC00594051 /* EventEmitterModule.m in Sources */,
+				3E3A61032C54E4E400594051 /* AwesomeProject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,8 +490,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3A61042C54E4E400594051 /* AwesomeProject.swift in Sources */,
+				3E3A61152C54F4EC00594051 /* EventEmitterModule.m in Sources */,
 				3E3A60EF2C4970F300594051 /* AwesomeProjectUITestsLaunchTests.swift in Sources */,
+				3E3A61102C54E93800594051 /* AWUIEeventManager.m in Sources */,
 				3E3A60ED2C4970F300594051 /* AwesomeProjectUITests.swift in Sources */,
+				3E3A61092C54E54700594051 /* AWRNManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,10 +595,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -619,10 +658,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -648,6 +684,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,6 +717,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,6 +738,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -708,6 +747,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jacken.AwesomeProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProject/Manager/AwesomeProjectTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AwesomeProject";
@@ -720,6 +761,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -728,6 +770,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jacken.AwesomeProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProject/Manager/AwesomeProjectTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AwesomeProject";
@@ -738,6 +781,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -745,6 +789,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jacken.AwesomeProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProject/Manager/AwesomeProjectUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = AwesomeProject;
@@ -755,6 +801,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -762,6 +809,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jacken.AwesomeProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "AwesomeProject/Manager/AwesomeProjectUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = AwesomeProject;

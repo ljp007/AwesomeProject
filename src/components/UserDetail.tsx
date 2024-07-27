@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet, NativeModules } from 'react-native';
 import axios from 'axios';
 import {useNavigation, RouteProp } from '@react-navigation/native';
 
@@ -18,10 +18,17 @@ type User = {
   website: string;
 };
 
+const { AWUIEeventManager } = NativeModules;
+
+
 const UserDetails: React.FC<UserDetailsProps> = ({ route }) => {
   const { userId } = route.params;
   const [user, setUser] = useState<User | null>(null);
   const navigation = useNavigation();
+
+  const showAlert = () => {
+    AWUIEeventManager.showAlert('Hello', 'This is a native alert!');
+  };
 
   useEffect(() => {
     axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`)
@@ -44,7 +51,7 @@ const UserDetails: React.FC<UserDetailsProps> = ({ route }) => {
       <Text>Email: {user.email}</Text>
       <Text>Phone: {user.phone}</Text>
       <Text>Website: {user.website}</Text>
-      <Button title="Back to User List" onPress={() => navigation.goBack()} />
+      <Button title="Show Alert" onPress={showAlert} />
     </View>
   );
 };

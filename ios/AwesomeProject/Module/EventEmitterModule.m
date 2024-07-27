@@ -2,14 +2,26 @@
 //  EventEmitterModule.m
 //  AwesomeProject
 //
-//  Created by 林 on 2024/7/22.
+//  Created by 林 on 2024/7/27.
 //
 
-#import <Foundation/Foundation.h>
-#import "React/RCTBridgeModule.h"
-#import "React/RCTEventEmitter.h"
-@interface RCT_EXTERN_MODULE(EventEmitterModule, RCTEventEmitter)
-//RCT_EXTERN_METHOD(supportedEvents)
+#import "EventEmitterModule.h"
 
-RCT_EXTERN_METHOD(emitEvent:(NSString *)name body:(NSDictionary *)body)
+
+@implementation EventEmitterModule
+
+RCT_EXPORT_MODULE();
+
+- (NSArray<NSString *> *)supportedEvents {
+  return @[@"UsersLoaded"];
+}
+
+RCT_EXPORT_METHOD(emitEvent:(NSString *)name body:(NSDictionary *)body) {
+  [self sendEventWithName:name body:body];
+}
+
++ (BOOL)requiresMainQueueSetup {
+  return YES;
+}
+
 @end
