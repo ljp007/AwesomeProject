@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, Button, StyleSheet, NativeModules } from 'react-native';
 import axios from 'axios';
 import {useNavigation, RouteProp } from '@react-navigation/native';
+import ComponnentsLife from './ComponnentsLife';
 
 type UserDetailsRouteProp = RouteProp<{ UserDetails: { userId: number } }, 'UserDetails'>;
 
@@ -52,6 +53,7 @@ const UserDetails: React.FC<UserDetailsProps> = ({ route }) => {
       <Text>Phone: {user.phone}</Text>
       <Text>Website: {user.website}</Text>
       <Button title="Show Alert" onPress={showAlert} />
+      <ComponnentsLife initialCount={0} />
     </View>
   );
 };

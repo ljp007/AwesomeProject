@@ -26,7 +26,6 @@ RCT_EXPORT_METHOD(showAlert:(NSString *)title message:(NSString *)message)
                                                      handler:^(UIAlertAction * _Nonnull action) {
                                                        // Handle the action
                                                      }];
-
     [alertController addAction:okAction];
     UIViewController * rootViewController = [UIApplication sharedApplication].windows.firstObject.rootViewController;
       if (rootViewController.presentedViewController) {
