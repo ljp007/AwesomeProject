@@ -28,6 +28,9 @@
 		3E3A61132C54F4EC00594051 /* EventEmitterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61122C54F4EC00594051 /* EventEmitterModule.m */; };
 		3E3A61142C54F4EC00594051 /* EventEmitterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61122C54F4EC00594051 /* EventEmitterModule.m */; };
 		3E3A61152C54F4EC00594051 /* EventEmitterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A61122C54F4EC00594051 /* EventEmitterModule.m */; };
+		3E5F39662CC786AD00290D89 /* StockDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5F39652CC7869800290D89 /* StockDataManger.swift */; };
+		3E5F39672CC786AD00290D89 /* StockDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5F39652CC7869800290D89 /* StockDataManger.swift */; };
+		3E5F39682CC786AD00290D89 /* StockDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5F39652CC7869800290D89 /* StockDataManger.swift */; };
 		4F48EC34CFC486B3F1F98BBA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 853D8923EF2A813F072AB150 /* PrivacyInfo.xcprivacy */; };
 		9C5BB0DDC50C0ECDD68A2540 /* libPods-AwesomeProject-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD626818555CFE9DF91EC6C6 /* libPods-AwesomeProject-AwesomeProjectTests.a */; };
 		AFE6A438782E79ECA07FE8FF /* libPods-AwesomeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111EF1DC1AF253464429D44A /* libPods-AwesomeProject.a */; };
@@ -74,6 +77,7 @@
 		3E3A610D2C54E93800594051 /* AWUIEeventManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWUIEeventManager.m; sourceTree = "<group>"; };
 		3E3A61112C54F4EC00594051 /* EventEmitterModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventEmitterModule.h; sourceTree = "<group>"; };
 		3E3A61122C54F4EC00594051 /* EventEmitterModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventEmitterModule.m; sourceTree = "<group>"; };
+		3E5F39652CC7869800290D89 /* StockDataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataManger.swift; sourceTree = "<group>"; };
 		853D8923EF2A813F072AB150 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ../PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		97F6122239E26C1E5436B3E9 /* Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A23157E7F1C2F9DAD38A39B5 /* Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 		3E3A61052C54E51C00594051 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				3E5F39652CC7869800290D89 /* StockDataManger.swift */,
 				3E3A61062C54E54700594051 /* AWRNManager.swift */,
 				3E3A610C2C54E93800594051 /* AWUIEeventManager.h */,
 				3E3A610D2C54E93800594051 /* AWUIEeventManager.m */,
@@ -464,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E5F39672CC786AD00290D89 /* StockDataManger.swift in Sources */,
 				3E3A60D02C4970F100594051 /* ViewController.swift in Sources */,
 				3E3A60CC2C4970F100594051 /* AppDelegate.swift in Sources */,
 				3E3A61072C54E54700594051 /* AWRNManager.swift in Sources */,
@@ -480,6 +486,7 @@
 			files = (
 				3E3A60E32C4970F300594051 /* AwesomeProjectTests.swift in Sources */,
 				3E3A61082C54E54700594051 /* AWRNManager.swift in Sources */,
+				3E5F39662CC786AD00290D89 /* StockDataManger.swift in Sources */,
 				3E3A610F2C54E93800594051 /* AWUIEeventManager.m in Sources */,
 				3E3A61142C54F4EC00594051 /* EventEmitterModule.m in Sources */,
 				3E3A61032C54E4E400594051 /* AwesomeProject.swift in Sources */,
@@ -494,6 +501,7 @@
 				3E3A61152C54F4EC00594051 /* EventEmitterModule.m in Sources */,
 				3E3A60EF2C4970F300594051 /* AwesomeProjectUITestsLaunchTests.swift in Sources */,
 				3E3A61102C54E93800594051 /* AWUIEeventManager.m in Sources */,
+				3E5F39682CC786AD00290D89 /* StockDataManger.swift in Sources */,
 				3E3A60ED2C4970F300594051 /* AwesomeProjectUITests.swift in Sources */,
 				3E3A61092C54E54700594051 /* AWRNManager.swift in Sources */,
 			);

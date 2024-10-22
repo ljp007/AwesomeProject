@@ -30,4 +30,6 @@ class AWRNManager: NSObject {
   static func requiresMainQueueSetup() -> Bool {
     return true
   }
+    
+  
 }

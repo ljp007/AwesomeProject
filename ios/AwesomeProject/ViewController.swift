@@ -14,7 +14,18 @@ class ViewController: UIViewController,RCTBridgeDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(handleUsersLoaded(notification:)), name:NSNotification.Name("UsersLoaded"), object: nil)
-
+        
+        
+        Task {
+            do {
+                
+                let stock = try await StockDataManger.shared.fetchStockData(from: "https://api.example.com/stock/AAPL")
+                print("Stock symbol: \(stock.symbol), price: \(stock.price)")
+            } catch {
+                print("Failed to fetch stock data: \(error)")
+            }
+        }
+        
     }
     
     
