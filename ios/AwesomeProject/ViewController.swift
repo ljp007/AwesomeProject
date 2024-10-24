@@ -28,6 +28,11 @@ class ViewController: UIViewController,RCTBridgeDelegate {
         
     }
     
+    @IBAction func swiftUIShowAction(_ sender: Any) {
+        let navVc = UINavigationController(rootViewController: AwUserViewController())
+        navVc.modalPresentationStyle = .overFullScreen
+        self.present(navVc, animated: true)
+    }
     
     @IBAction func showRnViewAction(_ sender: Any) {
         print("Hello")

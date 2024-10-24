@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -86,6 +86,10 @@
 		DD626818555CFE9DF91EC6C6 /* libPods-AwesomeProject-AwesomeProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeProject-AwesomeProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3E5F39692CC9EADE00290D89 /* SwiftUI */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SwiftUI; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		3E3A60C52C4970F100594051 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -147,6 +151,7 @@
 		3E3A60CA2C4970F100594051 /* AwesomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				3E5F39692CC9EADE00290D89 /* SwiftUI */,
 				3E3A61052C54E51C00594051 /* Manager */,
 				3E3A60FB2C4EA4F800594051 /* Module */,
 				3E3A60CB2C4970F100594051 /* AppDelegate.swift */,
@@ -230,6 +235,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3E5F39692CC9EADE00290D89 /* SwiftUI */,
 			);
 			name = AwesomeProject;
 			productName = AwesomeProject;
