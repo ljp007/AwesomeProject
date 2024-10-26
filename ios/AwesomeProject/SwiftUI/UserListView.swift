@@ -8,22 +8,9 @@
 import Foundation
 import SwiftUI
 
-struct User:Identifiable {
-    let id:UUID
-    let name:String
-    let age:Int
-    let email:String
-}
-
-let users = [
-    User(id: UUID(), name: "Alice", age: 30, email: "alice@example.com"),
-    User(id: UUID(), name: "Bob", age: 25, email: "bob@example.com"),
-    User(id: UUID(), name: "Charlie", age: 28, email: "charlie@example.com"),
-    User(id: UUID(), name: "David", age: 35, email: "david@example.com")
-]
-
 // 用户详情视图
 struct UserDetailView: View {
+    
     let user: User
     
     var body: some View {
@@ -47,10 +34,17 @@ struct UserDetailView: View {
     }
 }
 
+// @ObservedObject：用于跨多个视图共享的对象状态。通常用于模型数据。
+// @ObservedObject：用于在多个视图之间共享对象。当对象中标记为 @Published 的属性更改时，观察该对象的视图会刷新。
+
+
 struct UserListView:View {
+    
+    @ObservedObject var viewModel = UserListViewModel()
+    
     var body:some View{
         NavigationView{
-            List(users) { user in
+            List(viewModel.users) { user in
                 NavigationLink(destination: UserDetailView(user: user)) {
                     UserRowView(user: user)
                 }
